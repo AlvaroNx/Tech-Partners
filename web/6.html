@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+            font-family: helvetica;
+            margin: 0;
+            background-color: white;
+            height: 100%;
+        }
+
+        .social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.social-sidebar a {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;  
+}
+
+.social-sidebar a:hover {
+    background-color: #575b60;
+    transform: translateX(10px);
+}
+
+.social-sidebar .facebook {
+    background-color: #3853ff;
+}
+
+.social-sidebar .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);;
+}
+
+.social-sidebar .x {
+    background-color: #000000;
+}
+.logox{
+    border-radius: 100%;
+    width: 30px;
+    padding: 8px 0px 0px 0px;
+}
+
+        .container {
+            display: flex;
+            height: calc(100vh - 80px); /* Calcula el alto restante quitando el header y el footer */
+            text-align: justify;
+        }
+
+        .contact-info, .map {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #575b60;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .contact-info h1 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .map {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .map iframe {
+            width: 80%;
+            height: 300px;
+            border: none;
+        }
+
+        header {
+            font-family: helvetica;
+            font-size: 13px;
+            position: sticky;
+            top: 0;
+            background: black;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .nav-left img {
+            height: 50px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: #545350;
+        }
+
+        .footer-bar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .footer-bar a {
+            color: aqua;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .footer-bar a:hover {
+            text-decoration: underline;
+        }
+
+
+        h1{
+            color: aqua;
+        }
+        strong{
+            color: aqua;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral Redes Sociales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=61569123842017&mibextid=LQQJ4d" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tech_partners_?igsh=MW16b2Y2eGpmcnhsNg%3D%3D&utm_source=qr" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/tech_partners__?s=11" class="x" target="_blank">
+            <img src="xl.jpg" alt="Logo de X" class="logox"/>
+        </a>
+    </div>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="techh.png" alt="Logo">
+            </div>
+            <div class="nav-right">
+                <a href="2.html">Inicio</a>
+                <a></a>
+                <a href="3.html">Servicios</a>
+                <a></a>
+                <a href="6.html">Contacto</a>
+                <a></a>
+                <a></a>
+                <a></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h1>Contáctanos</h1>
+            <p><strong>Teléfono:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p><strong>Correo:</strong> <a href="mailto:info@techpartners.com">info@techpartners.com</a></p>
+            <p><strong>Dirección:</strong><a> Calle Ejemplo 123, Ciudad, País</a></p>
+        </div>
+        <div class="map">
+            <h3>Ubicación Exacta</h3><br><br>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.2221973541587!2d-98.24625672615689!3d19.316162144391818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd915f9b39e67%3A0x68c57f03afb25b76!2sEscalinatas%2C%20Centro%2C%2090000%20Tlaxcala%20de%20Xicoht%C3%A9ncatl%2C%20Tlax.!5e0!3m2!1ses!2smx!4v1732590338597!5m2!1ses!2smx" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bar">
+            <p>&copy; 2024 Tech Partners. Desing by AlvaroCP |<a href="#privacidad">Política de Privacidad</a> | <a href="6.html">Contacto</a></p>        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+    font-family: helvetica;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.social-sidebar a {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;  
+}
+
+.social-sidebar a:hover {
+    background-color: #575b60;
+    transform: translateX(10px);
+}
+
+.social-sidebar .facebook {
+    background-color: #3853ff;
+}
+
+.social-sidebar .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);;
+}
+
+.social-sidebar .x {
+    background-color: #000000;
+}
+.logox{
+    border-radius: 100%;
+    width: 30px;
+    padding: 8px 0px 0px 0px;
+}
+
+header {
+            font-family: helvetica;
+            font-size: 13px;
+            position: sticky;
+            top: 0;
+            background: black;
+            backdrop-filter: blur(5px); /* Efecto de desenfoque */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Espaciado entre imagen y enlaces */
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .nav-left img {
+            height: 50px; /* Ajusta el tamaño de la imagen */
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 30px; /* Espaciado entre enlaces */
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: #545350; /* Color amarillo al pasar el cursor */
+        }
+
+        /*Cont*/
+
+.tit{
+    font-size: 25px;
+}
+#acerca{
+    margin: 50px 100px 50px 100px;
+}
+.tx1{
+    font-size: 17px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.devices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.device {
+    text-align: center;
+}
+
+.img1{
+    width: 60px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.img2{
+    width: 120px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.img3{
+    width: 140px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.img4{
+    width: 80px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.img5{
+    padding: 10px 0px 10px 0px;
+    width: 60px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.img6{
+    width: 80px;
+    height: 80px;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+}
+.device p {
+    font-size: 14px;
+    margin: 0;
+}
+.but {
+    color: black;
+    font-size: 17px;
+    background-color: aqua;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 20px;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: box-shadow 0.3s ease; /* Suaviza la transición del sombreado */
+}
+.but:hover {
+    box-shadow: 0px 20px 28px rgba(0, 0, 0, 0.3); /* Agrega el sombreado */
+}
+
+
+.footer-bar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 97.4%
+}
+
+.footer-bar a {
+  color: aqua;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-bar a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral Redes Sociales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=61569123842017&mibextid=LQQJ4d" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tech_partners_?igsh=MW16b2Y2eGpmcnhsNg%3D%3D&utm_source=qr" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/tech_partners__?s=11" class="x" target="_blank">
+            <img src="xl.jpg" alt="Logo de X" class="logox"/>
+        </a>
+    </div>
+
+
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="techh.png" alt="Logo">
+            </div>
+            <!-- Contenedor de los enlaces (a la derecha) -->
+            <div class="nav-right">
+                <a href="2.html">Inicio</a>
+                <a> </a>
+                <a href="3.html">Servicios</a>
+                <a></a>
+                <a href="6.html">Contacto</a>
+                <a></a>
+                <a></a>
+                <a></a>
+            </div>
+        </nav>
+    </header>
+    
+<br><br>
+    <div class="container">
+        <h1>Centro de Reparación de Equipos Apple</h1>
+        <hr>
+        <h3>Verifica que tu equipo dañado se un dispositvo Apple</h3><br>
+        <div class="devices">
+            <div class="device">
+                <img class="img1" src="iphone.png" alt="iPhone">
+                <h4><p>iPhone</p></h4>
+            </div>
+            <div class="device">
+                <img class="img2"src="mac.png" alt="iMac">
+                <h4><p>iMac</p></h4>
+            </div>
+            <div class="device">
+                <img class="img3" src="macbook.png" alt="MacBook">
+                <h4><p>MacBook</p></h4>
+            </div>
+            <div class="device">
+                <img class="img4" src="ipad.png" alt="iPad">
+                <h4><p>iPad</p></h4>
+            </div>
+            <div class="device">
+                <img class="img5" src="watch.png" alt="Watch">
+                <h4><p>Watch</p></h4>
+            </div>
+            <div class="device">
+                <img class="img6" src="carga.jpg" alt="Cargadores">
+                <h4><p>Accesorios</p></h4>
+            </div>
+        </div>
+        <br><br><br>
+        <a class="but" href="5.html"><b>Llena nuestro formulario para atenderte</b></a><br><br><br>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="footer-bar">
+            <p>&copy; 2024 Tech Partners. Desing by AlvaroCP | <a href="#privacidad">Política de Privacidad</a> | <a href="6.html">Contacto</a></p>        </div>
+      </footer>
+</body>
+</html>

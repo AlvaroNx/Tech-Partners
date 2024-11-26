@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+    font-family: helvetica;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.social-sidebar a {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;  
+}
+
+.social-sidebar a:hover {
+    background-color: #575b60;
+    transform: translateX(10px);
+}
+
+.social-sidebar .facebook {
+    background-color: #3853ff;
+}
+
+.social-sidebar .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);;
+}
+
+.social-sidebar .x {
+    background-color: #000000;
+}
+.logox{
+    border-radius: 100%;
+    width: 30px;
+    padding: 8px 0px 0px 0px;
+}
+
+header {
+            font-family: helvetica;
+            font-size: 13px;
+            position: sticky;
+            top: 0;
+            background: black;
+            backdrop-filter: blur(5px); /* Efecto de desenfoque */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Espaciado entre imagen y enlaces */
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .nav-left img {
+            height: 50px; /* Ajusta el tamaño de la imagen */
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 30px; /* Espaciado entre enlaces */
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: #545350; /* Color amarillo al pasar el cursor */
+        }
+
+        /*Cont*/
+
+.tit{
+    font-size: 25px;
+}
+#acerca{
+    margin: 50px 100px 50px 100px;
+}
+.tx1{
+    font-size: 17px;
+    line-height: 28px;
+    text-align: justify;
+}
+.imgx{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.footer-bar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 97.4%
+}
+
+.footer-bar a {
+  color: aqua;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-bar a:hover {
+  text-decoration: underline;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral Redes Sociales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=61569123842017&mibextid=LQQJ4d" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tech_partners_?igsh=MW16b2Y2eGpmcnhsNg%3D%3D&utm_source=qr" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/tech_partners__?s=11" class="x" target="_blank">
+            <img src="xl.jpg" alt="Logo de X" class="logox"/>
+        </a>
+    </div>
+
+
+
+    <header>
+        <nav>
+            <!-- Contenedor de la imagen (a la izquierda) -->
+            <div class="nav-left">
+                <img src="techh.png" alt="Logo">
+            </div>
+            <!-- Contenedor de los enlaces (a la derecha) -->
+            <div class="nav-right">
+                <a href="2.html">Inicio</a>
+                <a> </a>
+                <a href="3.html">Servicios</a>
+                <a></a>
+                <a href="6.html">Contacto</a>
+                <a></a>
+                <a></a>
+                <a></a>
+            </div>
+        </nav>
+    </header>
+
+    <img src="tec.JPG" class="imgx">
+
+    <div id="acerca">
+        <b class="tit">Tech Partners: Tu aliado en tecnología Apple</b><br><br>
+        <p class="tx1">
+            En Tech Partners, nos especializamos en la reparación y mantenimiento de dispositivos Apple. Estamos ubicados en el corazón del mercado tecnológico y ofrecemos soluciones rápidas, confiables y de alta calidad. Nos destacamos por nuestra experiencia técnica, el uso de repuestos originales y la atención personalizada a nuestros clientes. Nuestro equipo está compuesto por técnicos certificados y apasionados por la tecnología, lo que nos permite resolver desde los problemas más comunes hasta los más complejos en tus dispositivos Apple.
+        </p><br><br>
+        <b class="tit">Misión</b><br><br>
+        <p class="tx1">En Tech Partners , nuestra misión es ofrecer servicios técnicos de excelencia para dispositivos Apple, asegurando la satisfacción de cada cliente. Nos comprometemos a proporcionar soluciones tecnológicas innovadoras, rápidas y confiables que garantizan el óptimo desempeño de los equipos.</p>
+        <br><br><b class="tit">Visión</b><br><br>
+        <p class="tx1">Queremos consolidarnos como líderes en el sector de reparación de dispositivos Apple, reconocidos por nuestra calidad de servicio, confianza y compromiso. Nuestra incluye visión ampliar nuestras operaciones para ser la primera opción de los usuarios Apple en toda la región.
+
+        </p>
+    </div>
+<br><br><br>
+    <footer>
+        <div class="footer-bar">
+          <p>&copy; 2024 Tech Partners. Desing by AlvaroCP | <a href="#privacidad">Política de Privacidad</a> | <a href="6.html">Contacto</a></p>
+        </div>
+      </footer>
+</body>
+</html>

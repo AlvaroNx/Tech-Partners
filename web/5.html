@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+    body {
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #000;
+}
+label{
+    text-align: justify;
+}
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #000;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: aqua;
+    box-shadow: 0 0 5px #353c3c;
+}
+
+button {
+    background-color: aqua;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #353c3c;
+    color: #fff;
+}
+
+/* Estilo para el mensaje de confirmación */
+#confirmation-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dedede;
+    border: 2px solid #dedede;
+    border-radius: 8px;
+    padding: 70px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#confirmation-message.hidden {
+    display: none;
+}
+
+#close-message {
+    background-color: aqua;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#close-message:hover {
+    background-color: #353c3c;
+    color: #fff;
+}
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.social-sidebar a {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;  
+}
+
+.social-sidebar a:hover {
+    background-color: #575b60;
+    transform: translateX(10px);
+}
+
+.social-sidebar .facebook {
+    background-color: #3853ff;
+}
+
+.social-sidebar .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);;
+}
+
+.social-sidebar .x {
+    background-color: #000000;
+}
+.logox{
+    border-radius: 100%;
+    width: 30px;
+    padding: 8px 0px 0px 0px;
+}
+
+header {
+            font-family: helvetica;
+            font-size: 13px;
+            position: sticky;
+            top: 0;
+            background: black;
+            backdrop-filter: blur(5px); /* Efecto de desenfoque */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Espaciado entre imagen y enlaces */
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .nav-left img {
+            height: 50px; /* Ajusta el tamaño de la imagen */
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 30px; /* Espaciado entre enlaces */
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: #545350; /* Color amarillo al pasar el cursor */
+        }
+
+        /*Cont*/
+
+.tit{
+    font-size: 25px;
+    text-align: justify;
+}
+.subtit{
+    font-size: 19px;
+    text-align: justify;
+    margin: 10px 0px 10px 40px;
+}
+#acerca{
+    margin: 50px 100px 50px 100px;
+}
+.tx1{
+    font-size: 17px;
+    line-height: 28px;
+    text-align: justify;
+    margin: 10px 0px 10px 35px;
+}
+.tx2{
+    font-size: 17px;
+    line-height: 28px;
+    text-align: justify;
+}
+.tx3{
+    font-size: 17px;
+    line-height: 28px;
+}
+.but {
+    color: black;
+    font-size: 17px;
+    background-color: aqua;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 20px;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: box-shadow 0.3s ease; /* Suaviza la transición del sombreado */
+}
+
+.but:hover {
+    box-shadow: 0px 20px 28px rgba(0, 0, 0, 0.3); /* Agrega el sombreado */
+}
+.xd{
+    margin: 0px 0px 100px 0px;
+}
+.imgx{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.footer-bar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 97.4%
+}
+
+.footer-bar a {
+  color: aqua;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-bar a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=61569123842017&mibextid=LQQJ4d" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tech_partners_?igsh=MW16b2Y2eGpmcnhsNg%3D%3D&utm_source=qr" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/tech_partners__?s=11" class="x" target="_blank">
+            <img src="xl.jpg" alt="Logo de X" class="logox"/>
+        </a>
+    </div>
+
+
+
+    <header>
+        <nav>
+            <!-- Contenedor de la imagen (a la izquierda) -->
+            <div class="nav-left">
+                <img src="techh.png" alt="Logo">
+            </div>
+            <!-- Contenedor de los enlaces (a la derecha) -->
+            <div class="nav-right">
+                <a href="2.html">Inicio</a>
+                <a> </a>
+                <a href="3.html">Servicios</a>
+                <a></a>
+                <a href="6.html">Contacto</a>
+                <a></a>
+                <a></a>
+                <a></a>
+            </div>
+        </nav>
+    </header>
+
+    <center><br><br><br>
+        <div class="form-container">
+            <h1>Reparación de Equipo</h1>
+            <form id="repair-form">
+                <label for="nombre">Nombre del cliente:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+    
+                <label for="equipo">Tipo de equipo:</label>
+                <select id="equipo" name="equipo" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="iMac">iMac</option>
+                    <option value="MacBook">MacBook</option>
+                    <option value="iPad">iPad</option>
+                    <option value="Watch">Watch</option>
+                    <option value="Acces">Accesorios</option>
+                    <option value="otro">Otro</option>
+                </select>
+    
+                <label for="descripcion">Descripción del problema:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe el problema" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div><br><br><br>
+    </center>
+
+    <!-- Mensaje de confirmación -->
+    <div id="confirmation-message" class="hidden">
+        <p>Formulario enviado correctamente.</p>
+        <button id="close-message">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+<footer>
+    <div class="footer-bar">
+        <p>&copy; 2024 Tech Partners. Desing by AlvaroCP | <a href="#privacidad">Política de Privacidad</a> | <a href="6.html">Contacto</a></p>    </div>
+  </footer>
+
+</body>
+</html>
